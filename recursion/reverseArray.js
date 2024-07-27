@@ -19,3 +19,18 @@ const reverseArray = (arr) => {
 }
 const arr = [2, 3, 1, 5, 6];
 console.log('array [' + arr + '] and reverse of an array \n [' + reverseArray(arr) + ']');
+
+//another way
+function reverseArray(arr) {
+  let left = 0;
+  let right = arr.length - 1;
+
+  while (left < right) {
+    // Swap the elements at left and right indices
+    [arr[left], arr[right]] = [arr[right], arr[left]];
+    left++;
+    right--;
+  }
+
+  return arr;
+}
