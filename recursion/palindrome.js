@@ -23,3 +23,10 @@ isPalindrome = (str) => {
 const str = 'refer';
 const result = isPalindrome(str);
 console.log(`Given String "${str}" is Palindrome ? ${result ? 'Yes' : 'No'}`)
+
+//another way
+function isPalindrome(str) { 
+
+  return str === str.split(”).reverse().join(”); 
+
+}
